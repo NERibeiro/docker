@@ -11,7 +11,7 @@ export const createUser = async (req, res) => {
     }
 
 
-    const user = await User.create(req.body)
+    const user = await User.create(userToCreate)
   
     res.status(201).json(user)
 }
